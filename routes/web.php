@@ -55,6 +55,8 @@ Route::middleware('auth')->group(function () {
         ->name('logout');
 
 
-    Route::view('/dashboard' , 'dashboard.dashboard')->name('dashboard');
-    Route::view('/dashboard/classe' , 'dashboard.classe.classe')->name('dashboard.classe');
+    Route::view('dashboard' , 'dashboard.dashboard')->name('dashboard');
+    Route::view('dashboard/classes' , 'dashboard.classe.classe')->name('dashboard.classe');
+
+    Route::view('dashboard/alunos' , 'dashboard.aluno.aluno')->name('dashboard.aluno');
 });

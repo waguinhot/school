@@ -95,11 +95,11 @@
                     <a href="{{ route('dashboard.classe') }}"
                         class="flex items-center p-4  text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
                         <x-icons.classe />
-                        <span class="ms-3 ml-2">Classe</span>
+                        <span class="ms-3 ml-2">Classes</span>
                     </a>
                 </li>
                 <li>
-                    <a href="#"
+                    <a href="{{route('dashboard.aluno')}}"
                         class="flex items-center p-4 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
                         <x-icons.users />
                         <span class="flex-1 ms-3 whitespace-nowrap ml-2">Alunos</span>
