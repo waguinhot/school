@@ -21,6 +21,9 @@
                     Email
                 </th>
                 <th scope="col" class="px-6 py-3">
+                    Cpf
+                </th>
+                <th scope="col" class="px-6 py-3">
                     Data de Nascimento
                 </th>
                 <th scope="col" class="px-6 py-3">
@@ -43,6 +46,9 @@
                         </th>
                         <td class="px-6 py-4">
                             {{$aluno->email}}
+                        </td>
+                        <td class="px-6 py-4">
+                            {{$aluno->cpf}}
                         </td>
                         <td class="px-6 py-4">
                             {{ date('d/m/Y ', strtotime($aluno->birthdate)) }}

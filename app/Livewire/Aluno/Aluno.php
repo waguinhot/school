@@ -14,7 +14,11 @@ class Aluno extends Component
 
     public function render()
     {
-        $alunos = ModelAluno::where('name' , 'LIKE' , '%'.$this->search.'%')->paginate(7);
+        $alunos =
+                ModelAluno::where('name' , 'LIKE' , '%'.$this->search.'%')
+                    ->orWhere('email' , 'LIKE' , '%'.$this->search.'%')
+                    ->orWhere('cpf' , 'LIKE' , '%'.$this->search.'%')
+                    ->paginate(7);
 
         return view('livewire.aluno.aluno' , ['alunos' => $alunos]);
     }
