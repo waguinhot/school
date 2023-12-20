@@ -56,4 +56,5 @@ Route::middleware('auth')->group(function () {
 
 
     Route::view('/dashboard' , 'dashboard.dashboard')->name('dashboard');
+    Route::view('/dashboard/classe' , 'dashboard.classe.classe')->name('dashboard.classe');
 });
